@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--========= BOXICONS =========-->
+         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+         <!--======== UNICONS=======-->
+         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+         <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="Assets/Css/style.css">
+
+        <title>Calculateur d'IMC</title>
+    </head>
+     <body> 
+        <header class="header" id="header">
+            <div class="header_contenair">
+                <h2 class="header_title">Wesh Chakal:</h2> 
+                <span class="header_subtitle"> Bienvenue sur votre Calculateur d'IMC 
+                     Allez va cheker ton IMC mon pote :</span>
+            </div>
+        </header>
+       <!-- <main class="main">
+            <section class="form">
+                <div class="conenu">
+                    <p>
+                        <label for="" class="contenu_label">TAILLE en Cm</label>
+                        <input type="text" class="contenu_input" id="height"><br><span class="height_msg" id="height_error"></span>
+                    </p>
+                    <p>
+                        <label for="" class="contenu_label">POIDS en Kg</label>
+                        <input type="text" class="contenu_input" id="weight"><br><span class="weight_msg" id="weight_error"></span>
+                    </p>
+                    <button type="submit" class="contenu_btn" id="contenu-btn">Calculer</button>
+                    <p id="prod"></p>
+                </div>
+            </section>-->
+      <main class="form"> 
+        <div action="" class="contenu_form">
+            <div class="contenu">
+               <label for="" class="contenu_label">TAILLE en Cm</label>
+               <input type="text" class="contenu_input" id="height" placeholder="Eh fais vite tape ta taille">
+               <div class="contenu_shadow"></div>        
+            </div>
+            <div>
+                <span class="height_msg" id="height_error"></span>
+            </div>
+            <div class="contenu">
+                <label for="" class="contenu_label">POIDS en Kg</label>
+                <input type="text" class="contenu_input" id="weight" placeholder="Wsh tape ton poids aussi mgl "> 
+                <div class="contenu_shadow"></div>                                    
+             </div>
+             <div>
+                <span class="weight_msg" id="weight_error"></span>
+             </div>
+             <button class="contenu_button">
+                <input type="submit" class="contenu_submit"  id="contenu-btn" value="Clique ici frère">
+                <i class="uil uil-calculator-alt button-icon"></i>
+             </button>
+            </div> 
+             <p id="prod" class="prod"></p>   
+     </main>
+    
+        <!--===== MAIN JS =====-->
+        <script src="Assets/Js/script.js"></script>
+    </body>
+</html>
