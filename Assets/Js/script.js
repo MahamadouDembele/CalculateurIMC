@@ -1,4 +1,10 @@
 /*========== Contenu JS ===========*/
+const html = document.querySelector('html')
+const check = document.querySelector('#checkbox')
+check.addEventListener('change' , function()
+{
+    html.classList.toggle('dark');
+}) 
 let button = document.getElementById('contenu-btn');
 
 button.addEventListener('click', () => {
