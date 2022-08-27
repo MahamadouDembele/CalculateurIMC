@@ -16,30 +16,22 @@
         <header class="header" id="header">
             <div class="header_contenair">
                 <h2 class="header_title">Wesh Chakal:</h2> 
-                <span class="header_subtitle"> Bienvenue sur votre Calculateur d'IMC 
-                     Allez va cheker ton IMC mon pote :</span>
+                    <span class="header_subtitle"> Bienvenue sur votre Calculateur d'IMC 
+                     Allez va cheker ton IMC mon pote :
+                    </span>
             </div>
         </header>
-       <!-- <main class="main">
-            <section class="form">
-                <div class="conenu">
-                    <p>
-                        <label for="" class="contenu_label">TAILLE en Cm</label>
-                        <input type="text" class="contenu_input" id="height"><br><span class="height_msg" id="height_error"></span>
-                    </p>
-                    <p>
-                        <label for="" class="contenu_label">POIDS en Kg</label>
-                        <input type="text" class="contenu_input" id="weight"><br><span class="weight_msg" id="weight_error"></span>
-                    </p>
-                    <button type="submit" class="contenu_btn" id="contenu-btn">Calculer</button>
-                    <p id="prod"></p>
-                </div>
-            </section>-->
-      <main class="form"> 
-        <div action="" class="contenu_form">
+      <main class="form "> 
+         <div class="dark_mode contenu_form" id="dark-mode">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div action="post" class="contenu_form dark_mode">
             <div class="contenu">
                <label for="" class="contenu_label">TAILLE en Cm</label>
-               <input type="text" class="contenu_input" id="height" placeholder="Eh fais vite tape ta taille">
+               <input type="text" class="contenu_input" id="height" placeholder="Veuillez entrer votre taille en Cm">
                <div class="contenu_shadow"></div>        
             </div>
             <div>
@@ -47,14 +39,14 @@
             </div>
             <div class="contenu">
                 <label for="" class="contenu_label">POIDS en Kg</label>
-                <input type="text" class="contenu_input" id="weight" placeholder="Wsh tape ton poids aussi mgl "> 
+                <input type="text" class="contenu_input" id="weight" placeholder="Veuillez entrer votre poids en Kg"> 
                 <div class="contenu_shadow"></div>                                    
              </div>
              <div>
                 <span class="weight_msg" id="weight_error"></span>
              </div>
              <button class="contenu_button">
-                <input type="submit" class="contenu_submit"  id="contenu-btn" value="Clique ici frère">
+                <input type="submit" class="contenu_submit"  id="contenu-btn" value="Appuyez pour calculer">
                 <i class="uil uil-calculator-alt button-icon"></i>
              </button>
             </div> 
