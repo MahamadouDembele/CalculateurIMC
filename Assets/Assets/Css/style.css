@@ -1,0 +1,294 @@
+/*=========== GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+/*=========== VARIABLES CSS ==========*/
+:root{
+    /*===== Base =====*/
+    --header-height:3rem;
+    --font-semi:600;
+    --font-bold:700;
+    --font-maxi:400;
+    --font-mini:300;
+    /*==== Couleurs =====*/
+    --first-color:hsl(206, 4% , 4%);
+    --second-color:#968a88;
+    --body-color:hsl(206,4%,6%);
+    --contenair-color:hsl(260,4%,10%);
+    --white-color-light:#FAFFFF;
+    --error-color:#FF0000;
+    --text-color:hsl(260,4%,75%);
+    --text-color-light:hsl(260,4%,65%);
+    --dark-color-light:#606060;
+    /*==== Fonts et Typographie ====*/
+    --body-font:'Edu SA Beginner', cursive;
+    --big-font-size:3rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:0.938rem;
+    --normal-font-size:0.753rem;
+    --small-font-size:0.581rem;
+    /*==== Z-Index ======*/
+    --z-tooltip:10;
+    --z-index:100;
+    /*===== Marges ======*/
+    --mb-1:0.5rem;
+    --mb-2:1rem;
+    --mb-3:1.5rem;
+    --mb-4:2rem;
+}
+:root{
+  --background:#F2EEE3;
+  --check:#000;
+  --ball:#F2EEE3;
+
+}
+
+
+.dark{
+  --background:#000;
+  --check:#F2EEE3;
+  --ball:#000;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+ /*width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;*/
+.contenu_form{
+  display: flex;
+  background: var(--background);
+  transition: .5s;
+}
+.checkbox:checked+label+.ball{
+  transform: translateX(24px);
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.label{
+width: 50px;
+height: 26px;
+background: var(--check);
+border-radius: 50px;
+padding: 5px;
+position: relative;
+}
+.ball{
+position: absolute;
+top: 2px;
+left: 2px;
+width: 22px;
+height: 22px;
+background: var(--ball);
+border-radius: 50%;
+transition: transform 0.2s linear;
+}
+.dark_mode{
+  margin-bottom: 2rem;
+}
+/*======= BASE ========*/ 
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ } 
+ body{
+    color: var(--white-color-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--normal-font-size);
+    background-color: var(--background);
+ }
+ .header{
+   width: 100%;
+   height: auto;
+   z-index: var(--z-index);
+  left: 50%;
+ }
+ .header_contenair{
+   color: var(--first-color);
+   align-items: center;
+   margin: var(--mb-4);
+ }
+ .header_title{
+   font-size: var(--h1-font-size);
+   color: var(--body-color);
+   text-align: center;
+ }
+ .header_subtitle{
+   font-size: var(--h3-font-size);
+   color: var(--first-color);
+   margin-left: 29rem;
+ }
+ .form{
+    display: grid;
+    place-items: center;
+    margin: 0 var(--mb-3);
+    padding: var(--mb-3);
+    background-color: var(--background);
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: .3s;
+   }
+   
+ .form:hover{
+    transform: translateY(-.5rem);
+  }
+  .contenu_form{
+   display: grid;
+   row-gap: var(--mb-3);
+ }
+ .contenu_input,
+ .contenu_submit{
+  border: 0;
+  outline: none;
+  font-size: var(--normal-font-size);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .contenu{
+    width: 320px;
+    height: 70px;
+    position: relative;
+    background-color: var(--contenair-color) ;
+ }
+ .contenu_shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color-light);
+ }
+ .contenu_input{
+    position: absolute;
+    border: 2px solid var(--second-color);
+    background-color: var(--white-color-light);
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-tooltip);
+    padding: 18px;
+    transition: transform .3s ;
+ }
+ .contenu_input ::placeholder{
+  transition: opacity .4s;
+ }
+ .height_msg,
+ .weight_msg{
+    color: var(--error-color);
+    position: sticky;
+ }
+ .contenu_label{
+  z-index:var(--z-index) ;
+  position: absolute;
+  top: 8px;
+  left: 21px;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  transition: .2s;
+  pointer-events: none;
+  color:black ;
+ }
+ .contenu_button{
+    justify-self: flex-end;
+ }
+ .contenu_button:hover{
+ color: var(--contenair-color);
+ }
+ .button-icon:hover{
+  color: var(--first-color);
+ }
+ .contenu_submit{
+  padding: var(--mb-1) var(--mb-2);
+  background-color: var(--contenair-color);
+  border: 1px solid var(--white-color-light);
+  color: white;
+  cursor: pointer;
+  transition: transform .3s;
+ }
+ .contenu_submit:hover{
+   background-color: var(--white-color-light) ;
+   color: var(--first-color);
+   border: 1px solid var(--contenair-color) ;
+   transform: translate(-5px -5px);
+ }
+ .contenu_input:focus::placeholder{
+    opacity: 0;
+    transition: .3s;
+ }
+ .prod{
+   align-items: center;
+   margin: var(--mb-3);
+ }
+/*======= Mouvement ===========*/
+ .contenu_input:focus::placeholder {
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  /* Move input and sticky input up */
+  .contenu_input:focus,
+  .contenu_form:not(:placeholder-shown).form__input:not(:focus) {
+    transform: translate(-8px, -8px);
+    padding: 28px 18px 18px;
+    animation: input-animation .5s;
+  }
+  
+  /* Move label and sticky label up */
+  /*.contenu_input:focus + .contenu_label,*/
+  .conenu_input:not(:placeholder-shown).contenu_input:not(:focus) + .contenu_label {
+    opacity: 1;
+    top: 2px;
+    left: 12px;
+    transition: .3s;
+  }
+  
+  /* Input bounce animation */
+   @keyframes input-animation {
+    0% {
+      transform: translate(0);
+    }
+    40% {
+      transform: translate(-9px, -9px);
+    }
+    60% {
+      transform: translate(-7px, -7px);
+    }
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+   .header{
+      width: 100%;
+      height: auto;
+   } 
+   .header_contenair{
+      width: 305px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+   }
+   .header_subtitle{
+      width: 310px;
+      text-align: center;
+      margin-right: 30rem;
+   }
+   .form{
+      width: 308px;
+   }
+    .contenu {
+      width: 100%;
+    }
+
+  }
+  
+  /* For large devices */
+   @media screen and (min-width: 968px) {
+    .form {
+        width: 40%;
+        margin-left: 26rem;
+        zoom: 1.1;
+    }
+  }
